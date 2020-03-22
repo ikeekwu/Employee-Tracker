@@ -23,5 +23,42 @@ connection.connect(function(err){
 
 // Inquirer prompts
 
-start
+const start = () => {
+    inquirer
+        .prompt({
+            name: "action",
+            type: "list",
+            message: "What would you like to do?",
+            choices: [
+                "View all departments",
+                "View all roles",
+                "View all employees",
+                "Add department",
+                "Add role",
+                "Add employee",
+                "Update employee role",
+                "Exit"
+            ]
+        })
+        .then(function(response){
+            if (response.action === "View all departments") {
+                emp_functions.viewDepts();
+            } else if (response.action === "View all roles") {
+                emp_functions.viewRoles();
+            } else if (response.action === "View all employees") {
+                emp_functions.viewEmployees();
+            } else if (response.action === "Add department") {
+                emp_functions.addDept();
+            } else if (response.action === "Add role") {
+                emp_functions.addRoles();
+            } else if (response.action === "Add employee") {
+                emp_functions.addEmployee();
+            } else if (response.action === "Update Roles") {
+                updateRole();
+            } else if (response.action === "Exit") {
+                connection.end();
+            }
+        })
+}
 
+start();
