@@ -1,6 +1,6 @@
 const mysql = require('mysql');
 const inquirer = require('inquirer');
-const consoleTable = require('console.table');
+
 const chalk = require('chalk')
 const emp_functions = require("./emp_fucntions")
 
