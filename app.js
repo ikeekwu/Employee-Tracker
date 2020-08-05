@@ -24,6 +24,8 @@ connection.connect(function(err){
 // Inquirer prompts
 
 const start = () => {
+
+    // Initial prompt for starting menu.
     inquirer
         .prompt({
             name: "action",
