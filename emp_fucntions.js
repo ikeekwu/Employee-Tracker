@@ -5,7 +5,7 @@ const init = require("./app");
 const inquirer = require("inquirer");
 
 
-// Makes connection to database
+// Makes connection to database.
 const connection = mysql.createConnection({
     host: "localhost",
     port: 3306,
@@ -14,7 +14,7 @@ const connection = mysql.createConnection({
     database: "emp_db",
     
 });
-//  confirms connection
+//  confirms connection.
 connection.connect(function (err) {
     if (err) throw err;
     console.log(chalk.blue('Connection made!'))
