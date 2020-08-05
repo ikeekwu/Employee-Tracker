@@ -5,7 +5,7 @@ const init = require("./app");
 const inquirer = require("inquirer");
 
 
-
+// Makes connection to database
 const connection = mysql.createConnection({
     host: "localhost",
     port: 3306,
