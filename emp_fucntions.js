@@ -33,7 +33,7 @@ function viewDepts() {
     })
 };
 
-// Function to view roles created 
+// Function to view roles created.
 function viewRoles(){
     connection.query("SELECT * FROM emp_role", function (err, res) {
         if(err) throw err;
