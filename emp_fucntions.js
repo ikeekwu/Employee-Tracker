@@ -60,6 +60,7 @@ function viewEmployees() {
     })
 }
 
+// Function to add a department
 function addDept() {
     inquirer
         .prompt({
