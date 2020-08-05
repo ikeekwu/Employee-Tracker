@@ -64,4 +64,5 @@ const start = () => {
         })
 }
 
+// when ran, it initializes the inquirer
 start();
