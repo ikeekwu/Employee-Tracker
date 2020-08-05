@@ -20,7 +20,7 @@ connection.connect(function (err) {
     console.log(chalk.blue('Connection made!'))
 });
 
-
+// Function for viewing different departments
 function viewDepts() {
     connection.query("SELECT * FROM department", function(err,res){
         if (err) throw err;
