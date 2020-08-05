@@ -130,6 +130,7 @@ const addRoles = () => {
     })
 }
 
+// function to add employees
 
 async function addEmployee() {
     connection.query("SELECT * FROM emp_role", function(err, results) {
