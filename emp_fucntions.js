@@ -78,6 +78,7 @@ function addDept() {
         })
 }
 
+// function to add roles
 const addRoles = () => {
     connection.query("SELECT * FROM department", function(err, res) {
         if (err) throw err;
