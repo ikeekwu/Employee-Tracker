@@ -216,6 +216,7 @@ async function addEmployee() {
     })
 }
 
+// function for updating rolls
 function updateRole() {
     connection.query("SELECT * FROM employee", function(err, results){
         if (err) throw err;
