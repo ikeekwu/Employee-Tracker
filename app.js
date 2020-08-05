@@ -42,6 +42,7 @@ const start = () => {
                 "Exit"
             ]
         })
+        // a promise is created in order to check which option is selected.
         .then(function(response){
             if (response.action === "View all departments") {
                 emp_functions.viewDepts();
