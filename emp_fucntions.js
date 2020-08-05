@@ -46,6 +46,7 @@ function viewRoles(){
     })
 };
 
+// Function to view employees
 function viewEmployees() {
 
     connection.query("SELECT * FROM employee", function(err, res) {
